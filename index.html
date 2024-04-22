@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Alarm Clock using Vanilla JavaScript</title>
+        <!--Linking StyleSheet File(Our file is named as "style.css")-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="title">
+            <h2>Alarm Clock Using Vanilla JavaScript</h2>
+        </div>
+
+            <div class="main-container">
+
+                <img src="alarm clock.png" alt="clock">
+
+                <h1>00:00:00 PM</h1>
+
+                <div class="content">
+                    <div class="column">
+                        <select required name="hours" id="hours" ></select>
+                    </div>
+
+                    <div class="column">
+                        <select required name="minutes" id="minutes"></select>
+                    </div>
+
+                    <div class="column">
+                        <select required name="seconds" id="seconds"></select>
+                    </div>
+
+                    <div class="column">
+                        <select required name="am-pm" id="am-pm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="set-alarm-container">
+                    <div class="content"><i>Upcoming Alarm's:</i></div>
+                    <div id="alarms-container" id="alarms-container"></div>
+                </div>
+
+                <button id="submitButton" type="submit">Set Alarm</button>
+
+            </div>
+        <!--Linking JavaScript File(Our file is named as "script.js")-->
+        <script src="script.js"></script>
+    </body>
+</html>
