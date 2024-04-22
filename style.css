@@ -1,0 +1,110 @@
+.title{
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    justify-content: center;
+    padding: 15px 0px ;
+    margin-bottom: 50px;
+}
+
+body, .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body{
+    padding: 0 10px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(247, 242, 242);
+}
+
+.main-container {
+    width: auto;
+    padding: 30px 30px;
+    background-color: rgb(206, 207, 199);
+    border-radius: 60px;
+    flex-direction: column;
+}
+.main-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 110px;
+}
+.main-container h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.content .column {    
+    padding: 3px 3px;
+    border-radius: 6px;
+    border: 1px solid #151516;
+}
+
+.column select {
+    width: 60px;
+    height: 30px;
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 9px;
+    background: rgb(206, 207, 199);
+}
+
+.main-container button {
+    width: 50%;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 0;
+    margin-top: 35px;
+    border-radius: 6px;
+    background: #454647;
+}
+
+.set-alarm-container {
+    width: 100%;
+    font-size: 22px;
+   }
+
+.alarm .delete-alarm {
+    border-radius: 6px;
+    background-color: #894343;;
+    color: #ffffff;
+    font-size: 12px;
+   }
+.time button{
+    text-align: center;
+    width: 45px;
+    height: 35px;
+}
+
+.time {
+    text-align: center;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* adding padding to container */
+    .main-container {
+        padding-block: 2rem;
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+}
